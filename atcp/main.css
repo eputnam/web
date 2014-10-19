@@ -1,0 +1,58 @@
+/**COLORS**/
+/*
+TEAL: #97d5db
+GREY: #E0E0E0
+BLUE: #6CBEFC
+DBLUE: #0E56AD
+DTEAL: #338B93
+*/
+
+
+body {
+}
+
+div {
+	padding:0px;
+	margin:0px;
+}
+
+
+#div_gallery {
+	height:50%;
+	display:block;
+}
+
+.img_gallery {
+	height:100%;
+	display:block;
+	margin:0 auto;
+	border:solid #868787 5px;
+	border-radius:50px;
+}
+
+#div_title {
+	width:100%;
+
+}
+
+#title_main {
+	display:block;
+	margin:10px auto;
+}
+
+#div_nav ul {
+	text-align:center;
+}
+
+#list_main_nav li {
+	font-family:'Titillium Web';
+	color:#868787;
+	cursor:pointer;
+	display:inline-block;
+	margin:0 20px;
+	font-size:30px;
+}
+
+#list_main_nav li:hover {
+	color:#97d5db;
+}
