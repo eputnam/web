@@ -1,0 +1,29 @@
+section {
+    width:100%;
+    margin:10px 0;
+    text-align:center;
+}
+
+.section_band {
+    color:#CC6600;
+}
+
+.div_memberdiv {
+    display:inline-block;
+    width:15%;
+}
+
+.div_membername {
+    font-size:40px;
+}
+
+.img_memberpic {
+    height:192px;
+    width:128px;
+    margin:10px auto;
+    cursor:pointer;
+}
+
+.div_memberinst {
+    font-size:20px
+}

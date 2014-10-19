@@ -1,0 +1,82 @@
+/**************************
+GENERAL
+**************************/
+
+body {
+	font-family:sans-serif;
+}
+
+/**************************
+HEADER
+**************************/
+
+header {
+	width:100%;
+	background-color:#d71ddc;
+	margin:0 0 5px 0;
+	padding:1px 0;
+}
+
+header h1 {
+	text-align:center;
+	shadow:5px;
+	color: #f0ab00;
+}
+
+/**************************
+LINKS
+**************************/
+
+a {
+	text-decoration:none;
+	margin:5px;
+}
+
+a:link {
+	color:black;
+}
+
+a:visited {
+	color:black;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+/**************************
+MENU
+**************************/
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul li {
+	width:100%;
+	margin:5px 0;
+	display:inline-block;
+	background-color:#f0ab00;
+	text-align:center;
+	border-radius:15px;
+}
+
+div {
+	height:100%;
+	background-color:#d71ddc;
+	margin: 5px 0 0 0;
+}
+
+/**************************
+FOOTER
+**************************/
+
+footer {
+	text-align:center;
+	margin: 5px 0;
+	width:100%;
+	background-color:#f0ab00;
+}

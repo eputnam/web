@@ -1,0 +1,198 @@
+/*****************
+GENERAL
+******************/
+
+div {
+	width:45%;
+	height:100%;
+	border:none;
+	background-color:#FFF;
+	min-height:25%;
+	padding:3px;
+	float:left;
+	position:inline;
+}
+
+body {
+	font-family: 'Miltonian Tattoo';
+	
+}
+
+p {
+	font-family: 'Patrick Hand SC';
+}
+
+h1, h2, h3 {
+	text-align:center;
+
+}
+
+h2 {
+	cursor:pointer;
+	font-size:80px;
+	margin:10px;
+	color:#000;
+}
+
+h3 {
+	cursor:pointer;
+	font-size:60px;
+	color:#555555;
+}
+
+table {
+	margin:5px;
+	width:100%;
+	font-size:40px;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+	color:#555555;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	display:none;
+}
+
+
+
+/*****************
+MAIN TITLE
+******************/
+
+#div_title {
+	min-height:50%;
+	width:50%;
+	float:right;
+	padding:0px;
+
+}
+
+#div_title img {
+	margin:0;
+	height:100%;
+	width:100%;
+
+}
+
+#title_main {
+	color:#336622;
+	font-size:160px;
+}
+
+/*****************
+THE BAND
+******************/
+
+.tables_theband td {
+	color:#DD8000;
+}
+
+.tables_theband img {
+	width:128px;
+	height:192px;
+	float:center;
+	margin:10px;
+}
+
+.inst_members {
+	font-size:20px;
+}
+
+.dates_members {
+	font-size:18px;
+	font-style:italic;
+}
+
+#view_extband {
+	cursor:pointer;
+}
+
+#list_extband {
+	display:none;
+}
+
+/*****************
+THE MUSIC
+******************/
+
+#title_sounds li {
+	margin:0px;
+	padding:0px;
+}
+
+#table_sounds img {
+	height:250px;
+	width:250px;
+	margin:20px;
+}
+
+#table_sounds td {
+	color:#555555;
+}
+
+.themusic_hidden {
+	display:none;
+}
+
+
+/*****************
+THE SHOWS
+******************/
+
+.widget_iframe {
+	display:none;
+}
+
+#iframe_theshows {
+	width:50%;
+}
+	
+/*****************
+THE MERCH
+******************/
+
+.titles_themerch {
+	display:none;
+}
+
+/*****************
+CONTACT US
+******************/
+
+
+#title_contactus {
+	color:#555555;
+}
+
+#form_contactus {
+	display:none;
+}
+
+/*****************
+FOOTER
+******************/
+
+#div_sociallinks {
+	border:none;
+	height:20%;
+	margin:2px;
+	float:right;
+}
+
+.img_sociallinks {
+	height:32px;
+	width:32px;
+}
+
+footer {
+	clear:both;
+	height:20%;
+	text-align:right;
+	
+}

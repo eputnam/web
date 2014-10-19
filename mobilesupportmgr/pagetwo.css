@@ -1,0 +1,154 @@
+/**************************
+GENERAL
+**************************/
+
+body {
+	font-family:"Roboto", sans-serif;
+}
+
+/**************************
+HEADER
+**************************/
+
+header {
+	width:100%;
+	background-color:#4f2d7f;
+	margin:0 0 5px 0;
+	padding:1px 0;
+}
+
+header h1 {
+	text-align:center;
+	color: #f0ab00;
+}
+
+/**************************
+LINKS
+**************************/
+
+nav {
+	text-align:center;
+}
+
+nav a:hover {
+	color:#808080;
+}
+
+nav a {
+	margin:0 3%;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:link {
+	color:black;
+}
+
+a:visited {
+	color:black;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+/**************************
+MENU
+**************************/
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+
+ul li {
+	width:100%;
+	margin:5px 0;
+	padding:0;
+	display:inline-block;
+	background-color:#f0ab00;
+	text-align:center;
+	border-radius:15px;
+	cursor:pointer;
+}
+
+div {
+	height:100%;
+	background-color:#4f2d7f;
+	margin: 5px 0 0 0;
+}
+
+/**************************
+FORM
+**************************/
+
+form {
+	margin:5px;
+}
+
+input[type="text"] {
+	width:60%%;
+}
+
+#form {
+	width:100%;
+	margin:5px 0;
+	display:inline-block;
+	background-color:#f0ab00;
+	text-align:center;
+	border-radius:15px;
+}
+
+/**************************
+QUEUE
+**************************/
+
+table tr td a:hover {
+	color:#808080;
+}
+
+table {
+	width:100%;
+}
+
+.tier1item {
+	width:50%;
+	margin:2px 0;
+	background-color:#fff;
+	text-align:left;
+}
+
+.value {
+	font-style:italic;
+}
+
+.heading {
+	width:100%;
+	margin:5px 0;
+	display:inline-block;
+	background-color:#f0ab00;
+	text-align:center;
+	border-radius:15px;
+	padding:0;
+	cursor:default;
+}
+
+.heading h2 {
+	margin:0;
+}
+
+/**************************
+FOOTER
+**************************/
+
+footer {
+	text-align:center;
+	margin: 5px 0;
+	width:100%;
+	background-color:#f0ab00;
+}

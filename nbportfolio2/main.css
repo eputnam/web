@@ -1,0 +1,32 @@
+
+/** GENERAL **/
+body {
+    background-color: black;
+    color:white;
+}
+
+
+/** MAIN TITLE **/
+#div_title_main {
+    height:70%;
+    display:inline-block;
+}
+
+#title_main {
+    width:100%;
+}
+
+/** NAV **/
+#div_headings {
+    display:inline-block;
+    height:200px;
+    float:right;
+}
+
+.titles {
+    height:60px;
+    display:block;
+    margin:20px 0;
+    cursor: pointer;
+
+}
