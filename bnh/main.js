@@ -19,9 +19,9 @@ function fadeIt(header) {
 }
 
 //SHOWS LIGHTBOX FOR BAND MEMBER
-function showLightBox(member, cbox){
+function showLightBox(member,cbox){
     $(member).click(function() {
-        $(cbox).colorbox({transition:'fade',width:'45%',height:'90%'});
+        $(cbox).colorbox({rel: cbox, maxHeight:'90%', maxWidth:'45%'});
     })
 }
 
@@ -53,38 +53,41 @@ function picBox(member,col_id, img1, img2, img3) {
 	});
 }
 
+
+
+
 //SELECTS RANDOM PRESS QUOTES AND DISPLAYS THEM, ALSO DISPLAYS REMAINING QUOTES ON DEMAND
 function selectPress() {
     var $press1 = $("<li class='press_quote'>\"This one scores very high on the likability index " +
         "with an above average height on the quality scale and should be worth a listen for " +
         "fans of straight up American roots rock music.\"</li><li class='press_source'>" +
-        "<a href='http://dcrocklive.blogspot.com/2013/03/record-reviews-march-2013.html'>- David Hintz, DC Rock Live</a></li>");
+        "<a href='http://dcrocklive.blogspot.com/2013/03/record-reviews-march-2013.html' target='_blank'>- David Hintz, DC Rock Live</a></li>");
 
     var $press2 = $("<li class='press_quote'>\“Finally, something is working in " +
-        "DC\”</li><li class='press_source'><a href='http://issuu.com/fourculture/docs/fourculture_issue_8/90'>- Serena Bulter, fourculture magazine</a></li>");
+        "DC\”</li><li class='press_source'><a href='http://issuu.com/fourculture/docs/fourculture_issue_8/90' target='_blank'>- Serena Bulter, fourculture magazine</a></li>");
 
     var $press3 = $("<li class='press_quote'>\“Expanding on their garage-rock meets Americana sound, Weddings and Funerals " +
         "features haunting lyrics, music rooted in blues and folk, and melodic, soulful vocal work.\”</li>" +
-        "<li class='press_source'><a href='http://www.riffraf.net/2013/05/indie-spotlight-bells-and-hunters/'>- Elford Alley, riffraff.net</a></li>");
+        "<li class='press_source'><a href='http://www.riffraf.net/2013/05/indie-spotlight-bells-and-hunters/' target='_blank'>- Elford Alley, riffraff.net</a></li>");
 
     var $press4 = $("<li class='press_quote'>\“Bells and Hunters has managed to create an album that walks a perfect line of " +
         "glorious angst…that feeling of emotion, tension, and perhaps resignation as you realize that perhaps things aren’t " +
         "what you thought they were and it’s time to move on.\”</li><li class='press_source'>" +
-        "<a href='http://fourculture.com/mind/a-perfect-line-of-glorious-angst-bells-and-hunters/'>- Paula Frank, fourculture magazine</a></li>");
+        "<a href='http://fourculture.com/mind/a-perfect-line-of-glorious-angst-bells-and-hunters/' target='_blank'>- Paula Frank, fourculture magazine</a></li>");
 
     var $press5 = $("<li class='press_quote'>\“Bells and Hunters wastes no time announcing that they are something different.\”</li>" +
-        "<li class='press_source'><a href='http://independentclauses.com/bells-and-hunters-time-travels/'>- Stephen Carradini, IndependentClauses.com</a></li>");
+        "<li class='press_source'><a href='http://independentclauses.com/bells-and-hunters-time-travels/' target='_blank'>- Stephen Carradini, IndependentClauses.com</a></li>");
 
     var $press6 = $("<li class='press_quote'>\“The Deli Magazine Artist of the Month April 2013\”</li><li class='press_source'>" +
-        "<a href='http://washington.thedelimagazine.com/13576/interview-bells-and-hunters-dc-delis-band-month-april'>- The Deli Magazine</a></li>");
+        "<a href='http://washington.thedelimagazine.com/13576/interview-bells-and-hunters-dc-delis-band-month-april' target='_blank'>- The Deli Magazine</a></li>");
 
     var $press7 = $("<li class='press_quote'>\"Adele-styled vocals with genuine emotion...strong, fast-paced rock....tight construction in the " +
-        "songs....not a note out of place.\"</li><li class='press_source'><a href='http://dcmusicdownload.com/2012/10/11/stpp-fest-part-1-black-squirrel-10-5-12/'>" +
+        "songs....not a note out of place.\"</li><li class='press_source'><a href='http://dcmusicdownload.com/2012/10/11/stpp-fest-part-1-black-squirrel-10-5-12/' target='_blank'>" +
         "- Clay Conger, dcmusicdownload.com</a></li>");
 
     var $press8 = $("<li class='press_quote'>\"Bluesy rock with plenty of funk moves and other sonic shifts......effectively creates a " +
         "rock environment perfect for weekend rockers wanting to cut loose.\"</li><li class='press_source'>" +
-        "<a href='http://dcrocklive.blogspot.com/2012/05/council-bluffs-bells-hunters-resistance.html'>- David Hintz, DC Rock Live Reviews</a></li>");
+        "<a href='http://dcrocklive.blogspot.com/2012/05/council-bluffs-bells-hunters-resistance.html' target='_blank'>- David Hintz, DC Rock Live Reviews</a></li>");
 //
 //  var $press9 = $("<li class='press_quote'>\"Best Local Band\" (3rd Place) - 2012 Washington City Paper " +
 //        "'Best of DC' Annual Readers Poll</li><li class='press_source'>- Washington City Paper</li>");
@@ -156,11 +159,11 @@ $(document).ready(function() {
     });
 
 
-    showLightBox('#keith','#cbox_keith');
-    showLightBox('#kelly','#cbox_kelly');
-    showLightBox('#joe','#cbox_joe');
-    showLightBox('#eric','#cbox_eric');
-    showLightBox('#guido','#cbox_guido');
+    showLightBox('#div_keith','.cbox_keith');
+    showLightBox('#div_kelly','.cbox_kelly');
+    showLightBox('#div_joe','.cbox_joe');
+    showLightBox('#div_eric','.cbox_eric');
+    showLightBox('#div_guido','.cbox_guido');
 
     $('#view_extband').click(function() {
 		$('#view_extband').toggle('fast');

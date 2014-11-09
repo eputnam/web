@@ -4,8 +4,6 @@ GENERAL
 
 body {
 	font-family:'Economica';
-/*	background:url('img/carnival_b_w.png');*/
-	
 }
 
 h1, h2, h3 {
@@ -75,31 +73,40 @@ THE BAND
     margin:0 auto;
 }
 
-.tables_theband td {
-	text-align:center;
-	color:#DD8000;
+section {
+    width:100%;
+    margin:10px 0;
+    text-align:center;
+}
+
+.section_band {
+    color:#CC6600;
+}
+
+.div_memberdiv {
+    display:inline-block;
+    width:15%;
+}
+
+.div_membername {
+    font-size:40px;
+}
+
+.img_memberpic {
+    height:192px;
+    width:128px;
+    margin:10px auto;
+    cursor:pointer;
+}
+
+.div_memberinst {
+    font-size:20px
 }
 
 .backarrow {
     width:40px;
     height:40px;
     margin-bottom:10%;
-}
-
-.pic_members img {
-	width:128px;
-	height:192px;
-	margin:10px;
-	cursor:pointer;
-}
-
-.inst_members {
-	font-size:20px;
-}
-
-.dates_members {
-	font-size:18px;
-	font-style:italic;
 }
 
 #view_extband {
@@ -115,6 +122,10 @@ THE BAND
 	text-align:center;
 	display:block;
 	margin:0 auto;
+}
+
+#section_past_members img {
+    cursor:auto;
 }
 
 
@@ -168,7 +179,6 @@ THE MUSIC
     font-size: 16px;
 }
 
-
 .themusic_hidden {
 	display:none;
 }
@@ -189,7 +199,6 @@ THE SHOWS
 .widget_iframe {
 	text-align:center;
 	display:none;
-
 }
 
 #iframe_theshows {

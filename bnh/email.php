@@ -13,8 +13,7 @@ if(isset($_POST['email'])) {
      
  
      
- 
-    function died($error) {
+	function died($error) {
  
         // your error code can go here
  
@@ -55,6 +54,10 @@ if(isset($_POST['email'])) {
     $error_message = "THERE'S A PROBLEM";
  
     $string_exp = "/^[A-Za-z .'-]+$/";
+	
+	
+	
+	
  
   if(!preg_match($string_exp,$name)) {
  
