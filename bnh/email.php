@@ -1,129 +1,65 @@
 <?php
- 
-if(isset($_POST['email'])) {
- 
-     
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
- 
-    $email_to = "putnam.eric@gmail.com";
- 
-    $email_subject = "FROM BELLSANDHUNTERS.COM";
- 
-     
- 
-     
-	function died($error) {
- 
-        // your error code can go here
- 
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
- 
-        echo "These errors appear below.<br /><br />";
- 
-        echo $error."<br /><br />";
- 
-        echo "Please go back and fix these errors.<br /><br />";
- 
-        die();
- 
-    }
- 
-     
- 
-    // validation expected data exists
- 
-    if(!isset($_POST['name']) ||
- 
-		!isset($_POST['comment']))	{
- 
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
- 
-    }
- 
-     
- 
-    $name = $_POST['name']; // required
-	
-	echo "set name";
-	
-    $comment = $_POST['comment']; // required
- 
-    echo "set comment";
- 
-    $error_message = "THERE'S A PROBLEM";
- 
-    $string_exp = "/^[A-Za-z .'-]+$/";
-	
-	
-	
-	
- 
-  if(!preg_match($string_exp,$name)) {
- 
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
- 
-  }
- 
-  if(strlen($comment) < 2) {
- 
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
- 
-  }
- 
-  if(strlen($error_message) > 0) {
- 
-    died($error_message);
- 
-  }
- 
-    $email_message = "Form details below.\n\n";
- 
-     
- 
-    function clean_string($string) {
- 
-      $bad = array("content-type","bcc:","to:","cc:","href");
- 
-      return str_replace($bad,"",$string);
- 
-    }
- 
-     
- 
-    $email_message .= "Name: ".clean_string($name)."\n";
- 
-    $email_message .= "Comment: ".clean_string($comment)."\n";
- 
- 
-     
- 
-     
- 
-// create email headers
- 
-$headers = 'From: THE WEBSITE'."\r\n".
+
+/*MAKE IT*/
+$message = 	"From: ".$_POST['name']."\n".
+			"Comment: ".$_POST['comment'];
+
+$subject = "FROM BELLSANDHUNTERS.COM";
+
+$email_to = "bellsandhunters@gmail.com";
+
+$email_from = "BELLSANDHUNTERS.COM";
+
+if($subject == null || $email_to == null || $email_from == null):
+	echo "something went wrong";
+
+/*HEAD IT*/
+$headers = 'From: '.$email_from."\r\n".
  
 'Reply-To: '.$email_from."\r\n" .
  
 'X-Mailer: PHP/' . phpversion();
- 
-@mail($email_to, $email_subject, $email_message, $headers);  
- 
+
+/*MAIL IT*/
+@mail($email_to, $subject, $message, $headers);
+
 ?>
- 
- 
- 
-<p>success, ho</p>
- 
- 
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
- 
- 
-<?php
- 
-}
- 
-?>
+<HTML>
+    <head>
+        <!-- Piwik -->
+        <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.bellsandhunters.com/";
+            _paq.push(["setTrackerUrl", u+"piwik.php"]);
+            _paq.push(["setSiteId", "1"]);
+            var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+            g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+        })();
+        </script>
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700|Open+Sans:400,800|Loved+by+the+King:400' rel='stylesheet' type='text/css'>
+    </head>
+    <body style="text-align:center">
+        <img src="img/headbanner.png"/>
+        <p>Thanks for your message!</p>
+        <a href="http://www.bellsandhunters.com">Click here to return to our page!</a>
+        <br>
+        <br>
+        <p>Or check us out on social media...</p>
+    </body>
+    <footer>
+    	<div id="div_sociallinks">
+			<a href="https://www.facebook.com/bellsandhunters" target="_blank"><img src="img/facebook.png" class="img_sociallinks"></a>
+			<a href="https://twitter.com/bellsandhunters" target="_blank"><img src="img/twitter.png" class="img_sociallinks"></a>
+			<a href="http://bellsandhunters.bandcamp.com/" target="_blank"><img src="img/bandcamp.png" class="img_sociallinks"></a>
+			<a href="http://www.reverbnation.com/bellsandhunters" target="_blank"><img src="img/reverbnation.png" class="img_sociallinks"></a>
+			<a href="http://instagram.com/bellsandhunters" target="_blank"><img src="img/instagram.png" class="img_sociallinks"></a>
+			<a href="http://www.youtube.com/bellsandhunters" target="_blank"><img src="img/youtube.png" class="img_sociallinks"></a>
+			<a href="https://www.soundcloud.com/bellsandhunters" target="_blank"><img src="img/soundcloud.png" class="img_sociallinks"></a>
+		</div>
+	</footer>
+</HTML>
